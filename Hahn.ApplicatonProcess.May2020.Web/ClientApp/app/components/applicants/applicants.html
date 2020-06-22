@@ -1,0 +1,43 @@
+<template>
+
+	<div class="col-md-12 row">
+		<h1>
+			Applicants
+			<span class="text-sm-left">
+				<a class="btn btn-sm btn-info" route-href="route: applicants-manage" t="applicants.addButtonText"><span class="glyphicon glyphicon-plus"></span> Add New</a>
+			</span>
+		</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p if.bind="!applicants"><em>Loading...</em></p>
+			<table if.bind="applicants" class="table table-bordered table-sm">
+				<thead>
+					<tr>
+						<th t="applicants.name"></th>
+						<th t="applicants.familyName"></th>
+						<th t="applicants.email"></th>
+						<th t="applicants.countryOfOrigin"></th>
+						<th t="applicants.age"></th>
+						<th t="applicants.hired"></th>
+						<th t="applicants.actions"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr repeat.for="applicant of applicants">
+						<td>${ applicant.name }</td>
+						<td>${ applicant.familyName }</td>
+						<td>${ applicant.emailAddress }</td>
+						<td>${ applicant.countryOfOrigin }</td>
+						<td>${ applicant.age }</td>
+						<td>${ applicant.hired == true ? "Yes":"No" }</td>
+						<td>
+							<a class="btn btn-sm btn-outline-info" route-href="route: applicants-manage;params.bind: { id: applicant.id }" t="applicants.editButtonText">Edit</a>
+							<a class="btn btn-sm btn-outline-danger" href="#" click.trigger="deleteApplicant(applicant.id)" t="applicants.deleteButtonText">Delete</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</template>

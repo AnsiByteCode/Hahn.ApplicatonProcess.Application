@@ -1,0 +1,37 @@
+{
+	"apptitle": "Hahn",
+	"applicants": {
+		"listingTitle": "Applicants",
+		"manageTitle": "Manage Applicants",
+		"titleDescription": "Please provide applicant details and submit the details",
+		"addButtonText": "Add New",
+		"name": "Name",
+		"familyName": "Family Name",
+		"address": "Address",
+		"email": "Email Address",
+		"countryOfOrigin": "Country of Origin",
+		"age": "Age",
+		"hired": "Hired",
+		"actions": "Actions",
+		"editButtonText": "Edit",
+		"deleteButtonText": "Delete",
+		"submitText": "Submit",
+		"resetText": "Reset"
+	},
+	"errorMessages": {
+		"required": "${$displayName} is required field",
+		"default": "${$displayName} is invalid.",
+		"matches": "${$displayName} is not correctly formatted.",
+		"email": "${$displayName} is not a valid email.",
+		"minLength": "${$displayName} must be at least ${$config.length} character${$config.length === 1 ? '' : 's'}.",
+		"maxLength": "${$displayName} cannot be longer than ${$config.length} character${$config.length === 1 ? '' : 's'}.",
+		"minItems": "${$displayName} must contain at least ${$config.count} item${$config.count === 1 ? '' : 's'}.",
+		"maxItems": "${$displayName} cannot contain more than ${$config.count} item${$config.count === 1 ? '' : 's'}.",
+		"min": "${$displayName} must be at least ${$config.constraint}.",
+		"max": "${$displayName} must be at most ${$config.constraint}.",
+		"range": "${$displayName} must be between or equal to ${$config.min} and ${$config.max}.",
+		"between": "${$displayName} must be between but not equal to ${$config.min} and ${$config.max}.",
+		"equals": "${$displayName} must be ${$config.expectedValue}.",
+		"countryOfOrigin":  "${$displayName} must be a valid coutry name"
+	}
+}

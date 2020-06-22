@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+	/* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+	.body-content {
+		padding-top: 50px;
+	}
+}
+
+.has-error > input, .has-error > select {
+	border: 1px solid red;
+}
+
+.has-error > .help-block.validation-message {
+	color: red;
+}
